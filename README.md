@@ -48,7 +48,9 @@ which fixture is invalid.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'fixture_validation'
+group :test do
+  gem 'fixture_validation'
+end
 ```
 
 And then execute:
