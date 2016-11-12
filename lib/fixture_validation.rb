@@ -1,7 +1,6 @@
 # Requires at least one test in the project
 # Must require 'fixture/validation_test' in test_helper after rails/test_help is required
 
-
 class FixtureValidation < ActiveSupport::TestCase
   fixtures :all
 

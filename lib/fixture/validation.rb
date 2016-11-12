@@ -1,2 +1,0 @@
-require "fixture/validation/version"
-
