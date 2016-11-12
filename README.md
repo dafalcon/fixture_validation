@@ -1,6 +1,6 @@
 # FixtureValidation
 
-Adds a test to validate all your Rails fixtures.
+Adds a test that validates all your Rails fixtures.
 
 As your Rails models grow and change over time, your fixtures may 
 become outdated without anyone noticing.  In my code I've found 

@@ -9,8 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ['Dan Falcone']
   spec.email         = ['danfalcone@gmail.com']
 
-  spec.summary       = %q{Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{Write a longer description or delete this line.}
+  spec.summary       = %q{Adds a test that validates all your Rails fixtures.}
   spec.homepage      = 'https://github.com/falconed/fixture_validation'
   spec.license       = 'MIT'
 
