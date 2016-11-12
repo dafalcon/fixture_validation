@@ -1,4 +1,4 @@
-# Fixture::Validation
+# FixtureValidation
 
 Adds a test to validate all your Rails fixtures.
 
@@ -48,7 +48,7 @@ which fixture is invalid.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'fixture-validation'
+gem 'fixture_validation'
 ```
 
 And then execute:
@@ -57,12 +57,13 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install fixture-validation
+    $ gem install fixture_validation
 
-Add this line to test/test_helper.rb:
+Add this line to test/test_helper.rb, after the 'rails/test_help' require:
 
 ```ruby
-require 'fixture_validation'
+require 'rails/test_help'  
+require 'fixture_validation_test'  # add this line
 ```
 
 ## Usage 
@@ -79,7 +80,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/fixture-validation. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/fixture_validation. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 
 ## License
