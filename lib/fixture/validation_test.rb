@@ -20,7 +20,7 @@ class FixtureValidation < ActiveSupport::TestCase
     errors = []
     klasses.each do |klass|
       klass.all.each do |obj|
-        errors << "Expected fixture #{klass.to_s} #{obj.id} to be valid.  Errors: #{obj.errors.to_a.join(', ')}.  Attribute values: #{obj.attributes.to_s}." unless obj.valid?
+        errors << "Expected #{klass.to_s} fixture #{obj.id} to be valid.  Errors: #{obj.errors.to_a.join(', ')}.  Attribute values: #{obj.attributes.to_s}." unless obj.valid?
         count += 1
       end
     end
