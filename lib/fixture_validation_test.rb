@@ -7,11 +7,12 @@ class FixtureValidation::Test < ActiveSupport::TestCase
   test 'fixtures are valid' do
     count = 0
     klasses = []
-    fixture_table_names.each do |klass_name|
+    fixture_table_names.each do |fixture_name|
+      klass_name = fixture_name.classify
       begin
-        klasses << klass_name.classify.constantize
+        klasses << klass_name.constantize
       rescue NameError
-        puts "Skipping #{klass_name}"
+        Rails.logger.debug "No model class (#{klass_name}) found for fixture #{fixture_name}"
       end
     end
 
