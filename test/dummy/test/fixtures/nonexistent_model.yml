@@ -1,0 +1,7 @@
+something:
+  name: test
+  value: 123
+
+something_else:
+  name: foo
+  value: bar

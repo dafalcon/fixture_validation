@@ -19,4 +19,9 @@ ActiveRecord::Schema.define(version: 20161212225004) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "nonexistent_model", force: :cascade do |t|
+    t.string   "name"
+    t.string   "value"
+  end
+
 end
