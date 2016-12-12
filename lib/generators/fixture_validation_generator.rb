@@ -5,8 +5,11 @@ class FixtureValidationGenerator < Rails::Generators::Base
     create_file 'test/models/fixture_validation_test.rb' do
       <<END
 require 'test_helper'
-require 'fixture_validation_test'
+require 'fixture_validation'
 
+class FixtureValidationTest < ActiveSupport::TestCase
+  include FixtureValidation
+end
 
 END
     end
