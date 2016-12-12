@@ -1,9 +1,9 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: Task One
+  name: MyString
   done: false
 
 two:
-  name: Task Two
+  name: MyString
   done: false
