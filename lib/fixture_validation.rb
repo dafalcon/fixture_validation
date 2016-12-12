@@ -3,9 +3,9 @@ require 'active_support/concern'
 
 module FixtureValidation
   extend ActiveSupport::Concern
-  
+
   included do
-    fixtures :all if respond_to? :fixtures
+    fixtures :all
   end
 
   def test_validate_fixtures
