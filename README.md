@@ -61,11 +61,10 @@ Or install it yourself as:
 
     $ gem install fixture_validation
 
-Add this line to test/test_helper.rb, after the 'rails/test_help' require:
+Call the generator to create the test stub:
 
-```ruby
-require 'rails/test_help'  
-require 'fixture_validation_test'  # add this line
+```bash
+$ rails g fixture_validation  
 ```
 
 ## Usage 
@@ -73,6 +72,10 @@ require 'fixture_validation_test'  # add this line
 Run your test suite:
 
     $ rake test
+    
+Or run the fixture validation test on its own:
+
+    $ rake test TEST=test/models/fixture_validation_test.rb
     
 ## Development
 
