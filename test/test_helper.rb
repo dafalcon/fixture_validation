@@ -11,7 +11,6 @@ Minitest.backtrace_filter = Minitest::BacktraceFilter.new
 
 class ActiveSupport::TestCase
   self.use_transactional_tests = false
-  self.use_transactional_fixtures = false
 
   def reload_fixtures
     @@already_loaded_fixtures = nil
